@@ -48,19 +48,19 @@ const Navbar = () => {
                                 key={l.href}
                                 href={l.href}
                                 className={`
-              relative px-2 md:px-3 ml-2 py-2 text-sm sm:text-base transition-colors whitespace-nowrap group
-              ${isActive(l.href)
+                                     relative px-2 md:px-3 ml-2 py-2 text-sm sm:text-base transition-colors whitespace-nowrap group
+                                        ${isActive(l.href)
                                         ? "text-baseBg bg-orange-50 rounded font-medium"
                                         : "text-black hover:text-baseBg"
                                     }
-            `}
+                            `}
                             >
                                 {l.label}
 
                                 {/* Hover underline animation */}
                                 <span
                                     className="
-                  pointer-events-none absolute left-0 bottom-0 h-[2px] w-full bg-baseBg
+                  pointer-events-none absolute left-0 bottom-0 h-0.5 w-full bg-baseBg
                   origin-right scale-x-0 transition-transform duration-300 ease-out
                   group-hover:scale-x-100 group-hover:origin-left
                 "
@@ -70,7 +70,7 @@ const Navbar = () => {
                                 {isActive(l.href) && (
                                     <span
                                         className="
-                      pointer-events-none absolute left-0 bottom-0 h-[2px] w-full bg-baseBg
+                      pointer-events-none absolute left-0 bottom-0 h-0.5 w-full bg-baseBg
                     "
                                     />
                                 )}

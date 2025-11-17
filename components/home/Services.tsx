@@ -4,8 +4,15 @@ import React from "react";
 import { FileText, Scale, Lightbulb, FileSearchCorner } from "lucide-react";
 import Wrapper from "@/common/Wrapper";
 
+export type Service = {
+  id: number;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+};
+
 const Services: React.FC = () => {
-  const services = [
+  const services : Service[] = [
     {
       id: 1,
       icon: <FileSearchCorner className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -51,13 +58,13 @@ const Services: React.FC = () => {
               key={service.id}
               className="
                 group bg-white rounded-xl p-4 sm:p-5 md:p-6 border border-textBlue
-                transition-all duration-300 hover:bg-gray-100
+                transition-all duration-200 hover:bg-[#F9FAFB]
               "
             >
               {/* Icon */}
               <div
                 className="
-                  inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl mb-4 sm:mb-5 md:mb-6
+                  inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-[10px] mb-4 sm:mb-5 md:mb-6
                   bg-orange-100 text-orange-500 transition-all duration-300
                   group-hover:bg-baseBg group-hover:text-white group-hover:scale-110
                 "

@@ -36,7 +36,7 @@ const HomeBanner = () => {
 
             {/* Left Content */}
             <div className="text-center md:text-left w-full md:w-1/2">
-              <div className="inline-block rounded-full px-4 py-2 text-baseBg border border-[#454F5B] bg-gray-700/50 text-sm md:text-base mb-4">
+              <div className="inline-block rounded-full px-4 py-2 text-baseBg border border-textGray bg-gray-700/50 text-sm md:text-base mb-4">
                 Expert Forensic Analysis
               </div>
 
@@ -83,7 +83,7 @@ const HomeBanner = () => {
                 items-center gap-4 
                 absolute bottom-20 right-[-174px] 
                 px-6 py-6 rounded-[14px]
-                border border-[#454F5B] 
+                border border-textGray 
                 bg-[rgba(28,36,55,0.90)]
                 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)]
               ">

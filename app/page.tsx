@@ -1,4 +1,6 @@
+import Areas from "@/components/home/Areas";
 import HomeBanner from "@/components/home/HomeBanner";
+import Objective from "@/components/home/Objective";
 import Services from "@/components/home/Services";
 
 export default function Home() {
@@ -6,6 +8,8 @@ export default function Home() {
     <div>
       <HomeBanner/>
       <Services/>
+      <Objective/>
+      <Areas/>
     </div>
   );
 }
