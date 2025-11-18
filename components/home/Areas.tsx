@@ -1,6 +1,6 @@
 "use client";
 import { Service } from "./Services";
-import {Lightbulb, Dna, Target, HardDrive, MapPin, Beaker, ClipboardCheck } from "lucide-react";
+import { Dna, Target, HardDrive, MapPin, Beaker, ClipboardCheck } from "lucide-react";
 import Wrapper from "@/common/Wrapper";
 
 const Areas = () => {
