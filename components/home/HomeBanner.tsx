@@ -12,6 +12,7 @@ const HomeBanner = () => {
   return (
     <div
       className="relative text-white"
+      id="home"
       style={{
         background: `
         linear-gradient(

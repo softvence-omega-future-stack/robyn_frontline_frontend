@@ -39,7 +39,7 @@ const Credentials = () => {
     ];
 
     return (
-        <div className="min-h-screen py-12 md:py-20 bg-[#F4F6F8]">
+        <div className="py-12 md:py-20 bg-[#F4F6F8]" id='about'>
             <Wrapper>
                 <div className="mx-auto">
                     {/* Header */}

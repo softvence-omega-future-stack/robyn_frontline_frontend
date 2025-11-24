@@ -1,6 +1,5 @@
 'use client';
 
-import React from "react";
 import {
     FileText,
     Microscope,
@@ -20,7 +19,8 @@ interface StepItem {
     number: string;
 }
 
-const Objective: React.FC = () => {
+const Objective = () => {
+
     const steps: StepItem[] = [
         {
             id: 1,
@@ -69,7 +69,7 @@ const Objective: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-[#21304B] py-16 md:py-20">
+        <div className="bg-[#21304B] py-16 md:py-20" id="cases">
             <Wrapper>
                 <div className=" mx-auto">
 

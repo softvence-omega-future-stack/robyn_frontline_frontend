@@ -2,8 +2,18 @@ import React from 'react';
 import { FileDown, Info } from 'lucide-react';
 import Wrapper from '@/common/Wrapper';
 
+type Cases = {
+    id: number;
+    title: string;
+    problem: string;
+    whatIDid: string;
+    outcome: string;
+    deliverables: string;
+    featured: boolean;
+};
+
 const SelectedCase = () => {
-    const cases = [
+    const cases : Cases[] = [
         {
             id: 1,
             title: "DNA Reanalysis in Homicide Case",
@@ -39,7 +49,7 @@ const SelectedCase = () => {
                 <div className="mx-auto">
                     {/* Header */}
                     <div className="text-center mb-8 md:mb-12 px-4 md:px-0">
-                        <h1 className="text-xl md:text-2xl lg:text-[32px] font-semibold text-black mb-2 md:mb-4">
+                        <h1 className="text-xl md:text-[32px] font-semibold text-black mb-2 md:mb-4">
                             Selected Case Summaries
                         </h1>
                         <p className="text-sm md:text-base text-textGray">
