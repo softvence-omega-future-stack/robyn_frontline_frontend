@@ -49,7 +49,7 @@ const AttorneyFeedback = () => {
             <Wrapper>
                 <div className="mx-auto">
                     {/* Header */}
-                    <div className="text-center mb-8 md:mb-12 px-4 md:px-0">
+                    <div className="text-center mb-8 md:mb-12">
                         <h2 className="text-xl md:text-2xl lg:text-[32px] font-semibold text-white">
                             Attorney Feedback
                         </h2>
