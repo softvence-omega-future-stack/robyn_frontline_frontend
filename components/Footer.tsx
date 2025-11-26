@@ -1,123 +1,87 @@
 import { Linkedin, Calendar, Mail } from 'lucide-react';
+import img from "@/public/images/footerLogo.png";
+import Image from 'next/image';
+import Wrapper from '@/common/Wrapper';
 
 const Footer = () => {
+
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {/* Left Section - Brand & Description */}
-          <div className="space-y-4">
-            <div className="bg-white w-fit px-6 py-3 rounded">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-serif italic text-slate-900">Frontline</span>
-                <svg 
-                  className="w-6 h-6" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <path d="m21 21-4.35-4.35" />
-                </svg>
+    <footer className="bg-[#0F172B] text-slate-300 py-12 px-4 sm:px-6 lg:px-8">
+      <Wrapper>
+        <div className="w-full mx-auto">
+
+          {/* Main Footer */}
+          <div className="flex flex-col md:flex-row md:justify-between gap-10 mb-12">
+
+            {/* LEFT (full on mobile, half on desktop) */}
+            <div className="w-full md:w-1/2 space-y-4">
+              <div className="relative w-[130px] h-[45px] md:w-40 md:h-[60px]">
+                <Image src={img} alt="Footer Logo" fill className="object-contain" />
               </div>
-              <span className="text-xs text-slate-600 tracking-wider">FORENSICS</span>
+
+              <p className="text-sm leading-relaxed max-w-md text-[#90A1B9]">
+                Independent forensic analysis, expert reports, and courtroom testimony for criminal defense attorneys.
+              </p>
             </div>
-            <p className="text-sm leading-relaxed max-w-sm">
-              Independent forensic analysis, expert reports, and courtroom testimony for criminal defense attorneys.
-            </p>
-          </div>
 
-          {/* Middle Section - Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg">Quick Links</h3>
-            <ul className="space-y-3">
-              <li>
-                <a 
-                  href="#services" 
-                  className="text-slate-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#process" 
-                  className="text-slate-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Process
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#case-studies" 
-                  className="text-slate-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Case Studies
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#credentials" 
-                  className="text-slate-300 hover:text-white transition-colors duration-200 text-sm"
-                >
-                  Credentials
-                </a>
-              </li>
-            </ul>
-          </div>
+            {/* RIGHT SIDE — quick links + connect */}
+            <div className="w-full md:w-1/2 flex flex-col md:flex-row justify-between gap-10">
 
-          {/* Right Section - Connect */}
-          <div className="space-y-4">
-            <h3 className="text-white font-semibold text-lg">Connect</h3>
-            <div className="flex gap-4">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center border border-slate-600 rounded hover:bg-slate-800 hover:border-slate-500 transition-all duration-200"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5 text-slate-300" />
-              </a>
-              <a 
-                href="#calendar" 
-                className="w-12 h-12 flex items-center justify-center border border-slate-600 rounded hover:bg-slate-800 hover:border-slate-500 transition-all duration-200"
-                aria-label="Schedule"
-              >
-                <Calendar className="w-5 h-5 text-slate-300" />
-              </a>
-              <a 
-                href="mailto:contact@frontlineforensics.com" 
-                className="w-12 h-12 flex items-center justify-center border border-slate-600 rounded hover:bg-slate-800 hover:border-slate-500 transition-all duration-200"
-                aria-label="Email"
-              >
-                <Mail className="w-5 h-5 text-slate-300" />
-              </a>
+              {/* Quick Links */}
+              <div className="space-y-4 w-full md:w-auto">
+                <h3 className="text-white font-medium text-base">Quick Links</h3>
+                <ul className="space-y-3 text-[#90A1B9]">
+                  <li><a href="#services" className="text-sm hover:text-white transition hover:underline">Services</a></li>
+                  <li><a href="#process" className="text-sm hover:text-white transition hover:underline">Process</a></li>
+                  <li><a href="#case-studies" className="text-sm hover:text-white transition hover:underline">Case Studies</a></li>
+                  <li><a href="#credentials" className="text-sm hover:text-white transition hover:underline">Credentials</a></li>
+                </ul>
+              </div>
+
+              {/* Connect */}
+              <div className="space-y-4 w-full md:w-auto">
+                <h3 className="text-white font-medium text-base">Connect</h3>
+
+                <div className="flex gap-4">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full flex items-center bg-[#1D293D] justify-center  hover:bg-baseBg transition"
+                  >
+                    <Linkedin className="w-5 h-5 text-white" />
+                  </a>
+
+                  <a
+                    href="#calendar"
+                    className="w-10 h-10 rounded-full flex items-center bg-[#1D293D] justify-center  hover:bg-baseBg transition"
+                  >
+                    <Calendar className="w-5 h-5 text-white" />
+                  </a>
+
+                  <a
+                    href="mailto:contact@frontlineforensics.com"
+                    className="w-10 h-10 rounded-full flex items-center bg-[#1D293D] justify-center  hover:bg-baseBg transition"
+                  >
+                    <Mail className="w-5 h-5 text-white" />
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
 
-        {/* Bottom Section - Legal Links */}
-        <div className="pt-8 border-t border-slate-800">
-          <div className="flex justify-center items-center gap-3 text-xs text-slate-400">
-            <a 
-              href="#privacy" 
-              className="hover:text-slate-300 transition-colors duration-200"
-            >
-              Privacy Policy
-            </a>
-            <span>•</span>
-            <a 
-              href="#terms" 
-              className="hover:text-slate-300 transition-colors duration-200"
-            >
-              Terms & Conditions
-            </a>
+          {/* Bottom Section */}
+          <div className="pt-8 border-t border-slate-800">
+            <div className="flex flex-wrap justify-center items-center gap-3 text-xs md:text-sm text-[#90A1B9]">
+              <a href="#privacy" className="hover:text-white hover:underline transition">Privacy Policy</a>
+              <span>•</span>
+              <a href="#terms" className="hover:text-white hover:underline transition">Terms & Conditions</a>
+            </div>
           </div>
+
         </div>
-      </div>
+      </Wrapper>
     </footer>
   );
 };

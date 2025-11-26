@@ -83,12 +83,12 @@ const RequestCase = () => {
 
 
   return (
-    <div id="contact" className="bg-[#21304B] py-12 md:py-20">
+    <div id="contact" className="bg-[#21304B] py-12 md:py-20 scroll-mt-18">
       <Wrapper>
         <div className="mx-auto">
 
           {/* TITLE */}
-          <h1 className="text-xl md:text-2xl lg:text-[32px] font-semibold text-white text-center mb-8 sm:mb-12">
+          <h1 className="text-xl md:text-[32px] font-semibold text-white text-center mb-8 sm:mb-12">
             Request Case Review
           </h1>
 
@@ -150,7 +150,7 @@ const RequestCase = () => {
                 </div>
 
                 {/* Secure */}
-                <div className="bg-baseBg/10 rounded-[14px] p-4 md:p-6 mt-6 border border-textGray">
+                <div className="bg-baseBg/10 rounded-lg md:rounded-[14px] p-4 md:p-6 mt-6 border border-textGray">
                   <h3 className="text-baseBg mb-2">Secure Communication</h3>
                   <p className="text-[#CAD5E2] text-sm">
                     For very sensitive material, request encrypted transfer instructions after submission.
@@ -164,7 +164,7 @@ const RequestCase = () => {
             <div className="md:col-span-2">
               <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="bg-textGray rounded-[14px] p-6 md:p-12 space-y-6"
+                className="bg-textGray rounded-lg md:rounded-[14px] p-6 md:p-12 space-y-6"
               >
 
                 {/* Name + Firm */}

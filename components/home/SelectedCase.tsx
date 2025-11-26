@@ -62,7 +62,7 @@ const SelectedCase = () => {
                         {cases.map((caseItem) => (
                             <div
                                 key={caseItem.id}
-                                className="bg-white rounded-[14px] border border-textBlue hover:shadow-md transition-shadow duration-200 flex flex-col"
+                                className="bg-white rounded-lg md:rounded-[14px] border border-textBlue hover:shadow-md transition-shadow duration-200 flex flex-col"
                             >
                                 {/* Card Content */}
                                 <div className="p-4 md:p-6 flex-1">
@@ -128,7 +128,7 @@ const SelectedCase = () => {
                     </div>
 
                     {/* Footer Notice */}
-                    <div className="bg-[#FFFBEB] border border-[#919EAB] rounded-[14px] p-4 md:p-6 flex items-start gap-3">
+                    <div className="bg-[#FFFBEB] border border-[#919EAB] rounded-lg md:rounded-[14px] p-4 md:p-6 flex items-start gap-3">
                         <Info className="text-baseBg shrink-0 mt-0.5 w-5 h-5" />
                         <p className="text-[#314158] text-sm md:text-base leading-relaxed">
                             All case details are anonymized to preserve client confidentiality. Specifics can be discussed under protective order or NDA.

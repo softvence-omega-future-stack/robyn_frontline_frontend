@@ -45,20 +45,20 @@ const Areas = () => {
 
 
     return (
-        <div className="py-12 md:py-16 lg:py-20">
+        <div className="py-12 md:py-20">
             <Wrapper>
                 {/* Heading */}
-                <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center text-gray-900 mb-8 sm:mb-10 md:mb-12">
+                <h1 className="text-xl md:text-[32px] font-semibold text-center text-gray-900 mb-8 md:mb-12">
                     Areas of Technical Expertise
                 </h1>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-10 md:mb-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-4 md:mb-12">
                     {services.map((service) => (
                         <div
                             key={service.id}
                             className="
-                                group bg-white rounded-xl p-4 sm:p-5 md:p-6 border border-textBlue
+                                group bg-white rounded-lg md:rounded-[14px] p-4 sm:p-5 md:p-6 border border-textBlue
                                 transition-all duration-200 hover:bg-[#F9FAFB]
                             "
                         >
@@ -94,7 +94,7 @@ const Areas = () => {
                 </div>
 
                 {/* Deliverable Box */}
-                <div className="rounded-xl p-6 bg-[#FFFBEB] border border-[#C4CDD5]">
+                <div className="rounded-lg md:rounded-[14px] p-6 bg-[#FFFBEB] border border-[#C4CDD5]">
                     <p className="text-sm md:text-base text-[#314158] text-center">
                         If a discipline listed here is central to your case, please include lab reports, chain-of-custody, and any prior expert reports with your intake.
                     </p>

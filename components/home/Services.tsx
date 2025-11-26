@@ -46,9 +46,9 @@ const Services: React.FC = () => {
 
   return (<div
     id="services"
-    className="py-12 md:py-16 lg:py-20"
+    className="py-12 md:py-20 scroll-mt-18"
   > <Wrapper>
-      {/* Heading */} <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center text-gray-900 mb-8 sm:mb-10 md:mb-12">
+      {/* Heading */} <h1 className="text-xl md:text-[32px] font-semibold text-center text-gray-900 mb-8 md:mb-12">
         Services I Provide </h1>
 
       {/* Services Grid */}
@@ -57,7 +57,7 @@ const Services: React.FC = () => {
           <div
             key={service.id}
             className="
-            group bg-white rounded-xl p-4 sm:p-5 md:p-6 border border-textBlue
+            group bg-white rounded-lg md:rounded-[14px] p-4 sm:p-5 md:p-6 border border-textBlue
             transition-all duration-200 hover:bg-[#F9FAFB]
           "
           >

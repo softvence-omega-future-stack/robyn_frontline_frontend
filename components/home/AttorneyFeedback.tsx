@@ -50,17 +50,17 @@ const AttorneyFeedback = () => {
                 <div className="mx-auto">
                     {/* Header */}
                     <div className="text-center mb-8 md:mb-12">
-                        <h2 className="text-xl md:text-2xl lg:text-[32px] font-semibold text-white">
+                        <h2 className="text-xl md:text-[32px] font-semibold text-white">
                             Attorney Feedback
                         </h2>
                     </div>
 
                     {/* Testimonials Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12 px-4 md:px-0">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-12">
                         {testimonials.map((testimonial) => (
                             <div
                                 key={testimonial.id}
-                                className="border border-[#637381] bg-[#1D293D] rounded-[14px] p-4 md:p-6 transition-colors duration-200"
+                                className="border border-[#637381] bg-[#1D293D] rounded-lg md:rounded-[14px] p-4 md:p-6 transition-colors duration-200"
                             >
                                 {/* Quote */}
                                 <p className="text-textBlue text-sm md:text-base mb-4 md:mb-6 leading-relaxed">

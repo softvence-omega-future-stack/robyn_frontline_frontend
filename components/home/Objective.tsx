@@ -69,16 +69,16 @@ const Objective = () => {
     ];
 
     return (
-        <div className="bg-[#21304B] py-16 md:py-20" id="cases">
+        <div className="bg-[#21304B] py-12 md:py-20 scroll-mt-18" id="cases">
             <Wrapper>
                 <div className=" mx-auto">
 
                     {/* Header */}
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-8 md:mb-12">
                         <p className="text-white text-sm md:text-lg mb-2">
                             My Method
                         </p>
-                        <h1 className="text-white text-2xl md:text-3xl font-semibold">
+                        <h1 className="text-white text-xl md:text-[32px] font-semibold">
                             Objective, Reproducible, Court-Ready
                         </h1>
                     </div>
@@ -90,7 +90,7 @@ const Objective = () => {
 
                         />
 
-                        <div className="space-y-8 md:space-y-12">
+                        <div className="space-y-6 md:space-y-12">
                             {steps.map((step) => {
                                 const Icon = step.icon;
 
@@ -119,7 +119,7 @@ const Objective = () => {
                                         {/* Card */}
                                         <div
                                             className="
-                      flex-1 rounded-xl p-6 shadow-md bg-textBlue 
+                      flex-1 rounded-lg md:rounded-xl p-6 shadow-md bg-textBlue 
                       transition-all duration-300 
                       group-hover:bg-white group-hover:shadow-xl
                     "

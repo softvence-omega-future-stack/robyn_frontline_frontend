@@ -53,15 +53,15 @@ const HowEngagement = () => {
     ];
 
     return (
-        <div className="py-16 md:py-20 bg-[#F4F6F8]">
+        <div className="py-12 md:py-20 bg-[#F4F6F8]">
             <Wrapper>
                 <div className="mx-auto">
                     {/* Header */}
-                    <div className="text-center mb-8 md:mb-12 px-4 md:px-0">
+                    <div className="text-center mb-8 md:mb-12">
                         <h2 className="text-xl md:text-[32px] font-semibold text-black mb-2 md:mb-4">
                             How Engagement Works
                         </h2>
-                        <p className="text-textGray text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
+                        <p className="text-textGray text-sm md:text-base max-w-3xl mx-auto">
                             I accept engagements from licensed attorneys on criminal matters only.
                             <br className="hidden sm:block" />
                             Choose the model that best fits your case needs.
@@ -76,7 +76,7 @@ const HowEngagement = () => {
                             return (
                                 <div
                                     key={option.id}
-                                    className="bg-[#F9FAFB] border border-textBlue rounded-[14px] p-4 md:p-6 transition-all duration-300 hover:shadow-lg hover:border-[#C4CDD5] hover:-translate-y-1 group hover:bg-[#FCF1E6]"
+                                    className="bg-[#F9FAFB] border border-textBlue rounded-lg md:rounded-[14px] p-4 md:p-6 transition-all duration-300 hover:shadow-lg hover:border-[#C4CDD5] hover:-translate-y-1 group hover:bg-[#FCF1E6]"
                                 >
                                     {/* Icon */}
                                     <div className="mb-4 md:mb-6">

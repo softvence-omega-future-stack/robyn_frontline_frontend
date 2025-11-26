@@ -61,10 +61,10 @@ const Faq = () => {
     };
 
     return (
-        <div className="bg-white py-16 md:py-20">
+        <div className="bg-white py-12 md:py-20">
             <Wrapper>
                 <div className="md:w-2/3 mx-auto">
-                    <h1 className="text-xl md:text-[32px] font-semibold text-black text-center mb-6 md:mb-10">
+                    <h1 className="text-xl md:text-[32px] font-semibold text-black text-center mb-8 md:mb-12">
                         Frequently Asked Questions
                     </h1>
 

@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Wrapper from '@/common/Wrapper';
 import logo from "@/public/frontline.svg";
-import MobileNav from './MobileNav';
 import { Button } from './ui/button';
+import MobileMenu from './MobileNav';
 
 export type NavLink = {
     scrollTo: string;
@@ -67,7 +67,7 @@ const Navbar = () => {
                                 key={i}
                                 onClick={() => handleScroll(item.scrollTo)}
                                 className={`
-                                    px-3 py-2 text-sm font-medium transition-colors relative group cursor-pointer
+                                    px-3 py-2 text-base transition-colors relative group cursor-pointer
                                     ${active === item.scrollTo ? 'text-baseBg bg-orange-50 rounded px-2 py-1' : 'text-black hover:text-baseBg'}
                                 `}
                             >
@@ -101,7 +101,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <MobileNav
+                <MobileMenu
                     open={open}
                     onClose={() => setOpen(false)}
                     navLinks={navLinks}

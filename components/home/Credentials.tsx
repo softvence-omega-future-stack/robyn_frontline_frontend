@@ -39,18 +39,18 @@ const Credentials = () => {
     ];
 
     return (
-        <div className="py-12 md:py-20 bg-[#F4F6F8]" id='about'>
+        <div className="py-12 md:py-20 bg-[#F4F6F8] scroll-mt-16 md:scroll-mt-18" id='about'>
             <Wrapper>
                 <div className="mx-auto">
                     {/* Header */}
-                    <h1 className="text-2xl md:text-[32px] font-semibold text-center mb-6 md:mb-10 text-gray-900 px-4">
+                    <h1 className="text-xl md:text-[32px] font-semibold text-center mb-8 md:mb-12 text-gray-900 px-4">
                         Credentials & Court Qualifications
                     </h1>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                         {/* Left Column */}
                         <div>
-                            <div className="bg-white border border-textBlue rounded-xl p-6 md:p-8 space-y-6">
+                            <div className="bg-white border border-textBlue rounded-lg md:rounded-xl p-6 md:p-8 space-y-6">
                                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6">
                                     <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden bg-gray-200">
                                         <Image 
@@ -97,7 +97,7 @@ const Credentials = () => {
                             {cards.map((card, index) => (
                                 <div
                                     key={index}
-                                    className="group bg-white rounded-2xl p-4 md:p-6 border border-gray-200 
+                                    className="group bg-white rounded-lg md:rounded-2xl p-4 md:p-6 border border-gray-200 
                                 transition-all duration-300 cursor-pointer
                                 hover:bg-[#E171001A] hover:border-gray-300 hover:shadow-lg hover:-translate-y-1"
                                 >
@@ -126,7 +126,7 @@ const Credentials = () => {
                             ))}
 
                             {/* Footer Banner */}
-                            <div className="mt-6 bg-gray-900 rounded-2xl p-4 md:p-6 text-left">
+                            <div className="mt-6 bg-gray-900 rounded-lg md:rounded-2xl p-4 md:p-6 text-left">
                                 <p className="text-gray-300 text-xs md:text-sm leading-relaxed">
                                     Credentials and prior testimony details will be provided on request. Client confidentiality is maintained for all matters.
                                 </p>

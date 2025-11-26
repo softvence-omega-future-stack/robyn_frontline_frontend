@@ -11,8 +11,8 @@ import { ArrowRight, Download } from "lucide-react";
 const HomeBanner = () => {
   return (
     <div
-      className="relative text-white"
-      id="home"
+    id="home"
+      className="relative text-white scroll-mt-20"
       style={{
         background: `
         linear-gradient(
