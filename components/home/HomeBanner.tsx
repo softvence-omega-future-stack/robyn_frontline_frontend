@@ -5,13 +5,14 @@ import Image from "next/image";
 import img from "@/public/images/bannerHero.png";
 import check from "@/public/chck.svg";
 import { Button } from "../ui/button";
-import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
+import { scrollToSection } from "../utils/scrollToSection ";
 
 const HomeBanner = () => {
+
   return (
     <div
-    id="home"
+      id="home"
       className="relative text-white scroll-mt-20"
       style={{
         background: `
@@ -56,11 +57,9 @@ const HomeBanner = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
-                  <Link href="/contact">
-                    <Button className="bg-orange-500 hover:bg-orange-600 text-sm md:text-base font-medium flex items-center gap-2 w-full">
-                      Request Case Review <ArrowRight className="w-4 h-4 text-white" />
-                    </Button>
-                  </Link>
+                  <Button onClick={() => scrollToSection("contact")} className="bg-orange-500 hover:bg-orange-600 sm:w-fit text-sm md:text-base font-medium flex items-center gap-2 w-full">
+                    Request Case Review <ArrowRight className="w-4 h-4 text-white" />
+                  </Button>
 
                 <Button className="border border-gray-600 bg-gray-700/50 text-[#E2E8F0] text-sm md:text-base flex items-center gap-2">
                   <Download /> Download CV
