@@ -98,8 +98,6 @@ const RequestCase = () => {
         formDataToSend
       );
 
-      console.log(response.data);
-
       if (response.data.success === true) {
         toast.success(response.data.message || "Case review request submitted successfully!");
       }
