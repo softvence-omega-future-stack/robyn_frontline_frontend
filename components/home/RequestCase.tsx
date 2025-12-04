@@ -379,7 +379,7 @@ const RequestCase = () => {
                 {/* SUBMIT BUTTON */}
                 <Button
                   type="submit"
-                  className="w-full bg-baseBg text-white"
+                  className="w-full bg-baseBg text-white hover:bg-orange-600"
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Case Review Request'}
                 </Button>
