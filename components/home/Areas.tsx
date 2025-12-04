@@ -59,7 +59,7 @@ const Areas = () => {
                             key={service.id}
                             className="
                                 group bg-white rounded-lg md:rounded-[14px] p-4 sm:p-5 md:p-6 border border-textBlue
-                                transition-all duration-200 hover:bg-[#F9FAFB]
+                                transition-all duration-200 hover:bg-[#F9FAFB] hover:shadow-md
                             "
                         >
                             {/* Flex Row: Icon + Content */}

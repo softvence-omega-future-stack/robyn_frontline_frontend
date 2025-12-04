@@ -120,7 +120,7 @@ const Objective = () => {
                                         <div
                                             className="
                       flex-1 rounded-lg md:rounded-xl p-6 shadow-md bg-textBlue 
-                      transition-all duration-300 
+                      transition-all duration-300 hover:shadow-lg hover:-translate-x-2 
                       group-hover:bg-white group-hover:shadow-xl
                     "
                                         >

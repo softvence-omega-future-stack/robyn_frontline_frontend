@@ -60,7 +60,7 @@ const AttorneyFeedback = () => {
                         {testimonials.map((testimonial) => (
                             <div
                                 key={testimonial.id}
-                                className="border border-[#637381] bg-[#1D293D] rounded-lg md:rounded-[14px] p-4 md:p-6 transition-colors duration-200"
+                                className="border border-[#637381] bg-[#1D293D] rounded-lg md:rounded-[14px] p-4 md:p-6 transition-colors duration-200 "
                             >
                                 {/* Quote */}
                                 <p className="text-textBlue text-sm md:text-base mb-4 md:mb-6 leading-relaxed">
