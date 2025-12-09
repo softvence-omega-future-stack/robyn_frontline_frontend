@@ -211,8 +211,8 @@ const RequestCase = () => {
             </div>
 
             {/* RIGHT SIDE FORM */}
-            <div className="md:col-span-2">
-              <form onSubmit={handleSubmit(onSubmit)} className="bg-textGray rounded-lg p-6 md:p-12 space-y-6">
+            <div className="md:col-span-2 p-6 md:p-12 bg-textGray rounded-lg ">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
 
                 {/* ATTORNEY + FIRM */}
                 <div className="grid sm:grid-cols-2 gap-4">
